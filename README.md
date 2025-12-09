@@ -2,15 +2,15 @@
 
 **Comprehensive toy implementations of the 30 foundational papers recommended by Ilya Sutskever**
 
-[![Implementations](https://img.shields.io/badge/Implementations-27%2F30-brightgreen)](https://github.com/pageman/sutskever-30-implementations)
-[![Coverage](https://img.shields.io/badge/Coverage-90%25-blue)](https://github.com/pageman/sutskever-30-implementations)
+[![Implementations](https://img.shields.io/badge/Implementations-28%2F30-brightgreen)](https://github.com/pageman/sutskever-30-implementations)
+[![Coverage](https://img.shields.io/badge/Coverage-93%25-blue)](https://github.com/pageman/sutskever-30-implementations)
 [![Python](https://img.shields.io/badge/Python-NumPy%20Only-yellow)](https://numpy.org/)
 
 ## Overview
 
 This repository contains detailed, educational implementations of the papers from Ilya Sutskever's famous reading list - the collection he told John Carmack would teach you "90% of what matters" in deep learning.
 
-**Progress: 27/30 papers (90%) implemented!**
+**Progress: 28/30 papers (93%) implemented!**
 
 Each implementation:
 - ✅ Uses only NumPy (no deep learning frameworks) for educational clarity
@@ -66,7 +66,7 @@ jupyter notebook 02_char_rnn_karpathy.ipynb
 | 16 | Relational Reasoning | ✅ `16_relational_reasoning.ipynb` | Relation networks, Pairwise functions |
 | 17 | **Variational Lossy Autoencoder** | ✅ `17_variational_autoencoder.ipynb` | VAE, ELBO, Reparameterization trick |
 | 18 | **Relational RNNs** | ✅ `18_relational_rnn.ipynb` | Relational memory, Multi-head self-attention, Manual backprop (~1100 lines) |
-| 19 | The Coffee Automaton | ✅ `01_complexity_dynamics.ipynb` | Irreversibility, Mixing, Complexity |
+| 19 | The Coffee Automaton | ✅ `19_coffee_automaton.ipynb` | Irreversibility, Entropy, Arrow of time, Landauer's principle |
 | 20 | **Neural Turing Machines** | ✅ `20_neural_turing_machine.ipynb` | External memory, Differentiable addressing |
 | 21 | Deep Speech 2 (CTC) | ✅ `21_ctc_speech.ipynb` | CTC loss, Speech recognition |
 | 22 | **Scaling Laws** | ✅ `22_scaling_laws.ipynb` | Power laws, Compute-optimal training |
@@ -249,7 +249,20 @@ These implementations cover the most influential papers and demonstrate core dee
 27. **`01_complexity_dynamics.ipynb`** - Complexity & Entropy
     - Cellular automata (Rule 30)
     - Entropy growth
-    - Irreversibility
+    - Irreversibility (basic introduction)
+
+28. **`19_coffee_automaton.ipynb`** - The Coffee Automaton (Deep Dive)
+    - **Comprehensive exploration of irreversibility**
+    - Coffee mixing and diffusion processes
+    - Entropy growth and coarse-graining
+    - Phase space and Liouville's theorem
+    - Poincaré recurrence theorem (will unmix after e^N time!)
+    - Maxwell's demon and Landauer's principle
+    - Computational irreversibility (one-way functions, hashing)
+    - Information bottleneck in machine learning
+    - Biological irreversibility (life and the 2nd law)
+    - Arrow of time: fundamental vs emergent
+    - **10 comprehensive sections exploring irreversibility across all scales**
 
 ## Repository Structure
 
@@ -277,6 +290,7 @@ sutskever-30-implementations/
 ├── 16_relational_reasoning.ipynb       # Relation networks
 ├── 17_variational_autoencoder.ipynb   # VAE
 ├── 18_relational_rnn.ipynb             # Relational RNN
+├── 19_coffee_automaton.ipynb           # Irreversibility deep dive
 ├── 20_neural_turing_machine.ipynb     # External memory
 ├── 21_ctc_speech.ipynb                # CTC loss
 ├── 22_scaling_laws.ipynb              # Empirical scaling
@@ -288,7 +302,7 @@ sutskever-30-implementations/
 └── 30_lost_in_middle.ipynb            # Long context analysis
 ```
 
-**27 out of 30 papers implemented! (90% complete)**
+**28 out of 30 papers implemented! (93% complete)**
 
 ## Learning Path
 
@@ -323,6 +337,7 @@ sutskever-30-implementations/
 22. **MDL Principle** (`23_mdl_principle.ipynb`) - Model selection via compression
 23. **Kolmogorov Complexity** (`25_kolmogorov_complexity.ipynb`) - Randomness & information
 24. **Complexity Dynamics** (`01_complexity_dynamics.ipynb`) - Entropy & emergence
+25. **Coffee Automaton** (`19_coffee_automaton.ipynb`) - Deep dive into irreversibility
 
 ## Key Insights from the Sutskever 30
 
@@ -442,12 +457,13 @@ Educational use. See individual papers for original research citations.
 
 ## Latest Additions (December 2025)
 
-### Recently Implemented (18 new papers!)
+### Recently Implemented (19 new papers!)
 - ✅ **Paper 4**: RNN Regularization (variational dropout)
 - ✅ **Paper 5**: Neural Network Pruning (MDL, 90%+ sparsity)
 - ✅ **Paper 7**: AlexNet (CNNs from scratch)
 - ✅ **Paper 8**: Seq2Seq for Sets (permutation invariance, attention pooling)
 - ✅ **Paper 9**: GPipe (pipeline parallelism, micro-batching, re-materialization)
+- ✅ **Paper 19**: The Coffee Automaton (deep dive into irreversibility, entropy, Landauer's principle)
 - ✅ **Paper 11**: Dilated Convolutions (multi-scale)
 - ✅ **Paper 12**: Graph Neural Networks (message passing)
 - ✅ **Paper 14**: Bahdanau Attention (original attention)
