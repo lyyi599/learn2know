@@ -449,6 +449,12 @@ These implementations are educational and can be improved! Consider:
 If you use these implementations in your work or teaching:
 
 ```bibtex
+@misc{learn2know,
+ title={Sutskever 30 - NumPy + PyTorch Learning Suite},
+ author={Yang-Yang Li, lyylyyi599@gmail.com},
+ year={2026},
+ note={Educational implementations of Ilya Sutskever's recommended reading list, inspired by https://github.com/pageman/sutskever-30-implementations#}
+},
 @misc{sutskever30implementations,
  title={Sutskever 30: Complete Implementation Suite},
  author={Paul "The Pageman" Pajo, pageman@gmail.com},
@@ -466,6 +472,7 @@ Educational use. See individual papers for original research citations.
 - **Ilya Sutskever**: For curating this essential reading list
 - **Paper authors**: For their foundational contributions
 - **Community**: For making these ideas accessible
+- **Sutskever 30 - Complete Implementation Suite**: For numpy implementation
 
 ---
 
